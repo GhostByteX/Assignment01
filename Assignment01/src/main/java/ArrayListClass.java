@@ -9,7 +9,7 @@ public class ArrayListClass{
 		numofElements=0;  
 		addPointer=0;
 	}
-	
+	//
 	//function to access elements at a given position.
 	public int getElement(int index){
 		return array[index];

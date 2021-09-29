@@ -7,7 +7,7 @@ public class ArrayClass{
 		array=new int[100]; //length of array = 100
 		size=0;
 	}
-
+	//
 	//function to get values from the user.
 	static public void getValues(){
 		@SuppressWarnings("resource")

@@ -10,7 +10,7 @@ public class DoublyLinkedList{
 			this.prev=null;
 		}
 	}
-	
+	//
 	static Node head;  //head of the list i.e first element
 	static Node tail;  //tail of the list i.e last element
 	static int size;   //number of elements in the list.

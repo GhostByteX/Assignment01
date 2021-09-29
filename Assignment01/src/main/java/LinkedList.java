@@ -9,7 +9,7 @@ public class LinkedList{
 			this.next=null;
 		}
 	}
-
+	//
 	static Node head;  //head of the linked list. i.e first element.
 	static int size;   //number of elements in the list.
 	
