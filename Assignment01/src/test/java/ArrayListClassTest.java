@@ -42,7 +42,7 @@ public class ArrayListClassTest {
 	@Test
 	public void removeTest() {
 		
-		int[] positiveresult= {4,5,8,7,14,33};
+		int[] positiveresult= {4,5,8,6,14,33};
 		int[] negativeresult= {14,23,15,18,16};
 		
 		

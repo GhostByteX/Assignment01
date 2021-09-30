@@ -11,9 +11,10 @@ public class CircularLinkedList{
 	}
 
 	static Node head;   //head of the list.
-
+	static int size;
 	public CircularLinkedList(){
 		head=null;
+		size=0;
 	}
 
 	//function to add element at the front of the list.
@@ -23,6 +24,7 @@ public class CircularLinkedList{
 		if(head==null){
 			head=node;
 			node.next=head;
+			size++;
 			return;
 		}
 		
@@ -31,6 +33,7 @@ public class CircularLinkedList{
 			node.next=head;
 			head=node;
 			node.next.next=head;  //point the last element to head of the list.
+			size++;
 			return;
 		}
 		
@@ -53,6 +56,7 @@ public class CircularLinkedList{
 		if(head==null){
 			head=node;
 			node.next=head;
+			size++;
 			return;
 		} 		
 	
@@ -60,6 +64,7 @@ public class CircularLinkedList{
 		if(head.next==head){
 			head.next=node;
 			node.next=head;
+			size++;
 			return;
 		}
 		Node temp = head;
@@ -80,6 +85,7 @@ public class CircularLinkedList{
 
 		if(head.next==head){
 			head=null;
+			size--;
 			System.out.println("Successfull.");
 			return;
 		}
@@ -90,6 +96,7 @@ public class CircularLinkedList{
 		}
 		head=head.next;
 		temp.next=head;  //update the last element to point to new head.
+		size--;
 		System.out.println("Successfull.");
 	}
 
@@ -103,6 +110,7 @@ public class CircularLinkedList{
 		
 		if(head.next==head){
 			head=null;
+			size--;
 			System.out.println("Successfull.");
 			return;
 		}
@@ -112,42 +120,9 @@ public class CircularLinkedList{
 			temp=temp.next;
 		}
 		temp.next=temp.next.next; //update new last element to point to head.
+		size--;
 		System.out.println("Successfull.");
 	}
 
-	//function to display the list.
-	public static void display(){
-		System.out.print("List : ");
-		if(head==null){
-			System.out.println("Empty List.");
-			return;
-		}
-
-		Node temp=head;
-		while(temp.next!=head){
-			System.out.print(temp.key + " ");
-			temp=temp.next;
-		}
-		System.out.println(temp.key);
-	}
-	//
-	//main function to run the program.
-	public static void main(String [] args){
-		CircularLinkedList list = new CircularLinkedList();
-		list.pushFront(10);
-		list.pushBack(12);
-		list.pushFront(8);
-		list.pushBack(14);
-
-		list.display();
-
-		list.popFront();
-		list.display();
-
-		list.popBack();
-		list.display();
-		list.popFront();
-		list.popBack();
-		list.display();
-	}
+	
 }

@@ -102,57 +102,8 @@ public class DoublyLinkedList{
 		size--;
 	}
 
-	//function to display the list.
-	public static void displayF(){
-		System.out.print("List : ");
-		if(head==null){
-			System.out.println("Empty List.");
-			return;
-		}
-		Node temp=head;
-		while(temp!=null){
-			System.out.print(temp.key + " ");
-			temp=temp.next;
-		}
-		System.out.println();
-	}
-		
-	public static void displayB(){
-		System.out.print("Reverse List : ");
-		if(head==null && tail==null){
-			System.out.println("Empty List.");
-			return;
-		}
-
-		Node temp=tail;
-		while(temp!=null){
-			System.out.print(temp.key + " ");
-			temp=temp.prev;
-		}
-		System.out.println();
-	}
 	
-	public static void main(String [] args){
-		DoublyLinkedList list = new DoublyLinkedList();
-		list.pushFront(10);
-		list.pushBack(12);
-		list.pushFront(8);
-		list.pushBack(14);
-		list.displayF();
-		list.displayB();
-
-		list.popFront();
-		list.displayF();
-		list.displayB();
-		list.popBack();
-		list.displayF();
-		list.displayB();
-		
-		list.popFront();
-		list.displayB();
-		list.popFront();
-		list.displayF();
-	}
+	
 }
 		
 	

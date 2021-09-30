@@ -8,17 +8,6 @@ public class ArrayClass{
 		size=0;
 	}
 	//
-	//function to get values from the user.
-	static public void getValues(){
-		@SuppressWarnings("resource")
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the number of values to insert:");
-		int numofElem = input.nextInt(); //number of elements to insert.
-		for(int i=0;i<numofElem;i++){
-			System.out.println("Enter the num"+i+":");
-			insert(input.nextInt(),i);
-		}
-	} 
 	
 	//function to insert elements in the array.
 	static public void insert(int number,int position){
@@ -87,23 +76,5 @@ public class ArrayClass{
 		
 	}
 
-	//main function
-	public static void main(String [] args){
-		ArrayClass array = new ArrayClass(); //create an array.
-		array.getValues(); //get values from the user.
-		array.display();   //display the array.
-
-		array.insert(10,4);//insert num=10 at pos=4
-		array.display();   //display the array.
-
-		array.delete(3);   //delete num at pos=3 from the array.
-		array.display();   //display the array.
-
-		System.out.println(array.linearSearch(40)); //check 40 is present in the array using linearSearch.
-
-		array.bubbleSort();//sort the array.
-		array.display();   //display the array.
-
-		System.out.println(array.binarySearch(56,0,size)); //search for num=56 using Binary Search.
-	}
+	
 }

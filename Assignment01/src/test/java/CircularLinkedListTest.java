@@ -6,9 +6,9 @@ import org.junit.Test;
 
 
 public class CircularLinkedListTest {
-	private DoublyLinkedList object;
+	private CircularLinkedList object;
 	@Before
-	public void initialize() { object= new DoublyLinkedList(); }
+	public void initialize() { object= new CircularLinkedList(); }
 	
 	
 	
