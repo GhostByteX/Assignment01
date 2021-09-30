@@ -3,9 +3,9 @@
 #Author
 
 
-  <Muhammad Usman Malik>
-  <19I-0402>
-  <CS-F>
+  #Muhammad Usman Malik
+  #19I-0402
+  #CS-F
   
 This is the first Assignment of the course Advanced Programming implemented in Java using the IDE Eclipse
 
